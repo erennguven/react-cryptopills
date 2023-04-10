@@ -33,9 +33,11 @@ function TrendingDataFetching() {
         });
       };
       fetchData();
-     const intervalId = setInterval(fetchData, 500);
+     const intervalId = setInterval(fetchData, 100000);
      return () => clearInterval(intervalId);
    }, []);
+   
+   
     const [coinbaseBtcVolume, setCoinbaseBtcVolume] = useState([]);
     const [binanceBtcVolume, setBinanceBtcVolume] = useState([]);
     const [okxBtcVolume, setOkxBtcVolume] = useState([]);
@@ -73,7 +75,7 @@ function TrendingDataFetching() {
       });
     };
       fetchData();
-      const intervalId = setInterval(fetchData, 1000);
+      const intervalId = setInterval(fetchData, 100000);
       return () => clearInterval(intervalId);
     }, []);
     const [dominance, setDominance] = useState([]);
@@ -92,7 +94,7 @@ function TrendingDataFetching() {
      }); 
     };
     fetchData();
-      const intervalId = setInterval(fetchData, 200);
+      const intervalId = setInterval(fetchData, 100000);
       return () => clearInterval(intervalId);
      
   }, []);
@@ -151,7 +153,7 @@ function TrendingDataFetching() {
               </Col> 
             <Col xs={6} md={4}>
          <div className="trending-dominance">
-          <h5 className="text-start">Exchange Volumes <GoGraph/></h5>
+          <h5 className="text-start">Exchange Volumes ฿ <GoGraph/></h5>
                 <Row>
                 <tr>
                   <th className="exchange-data">1</th>

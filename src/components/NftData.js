@@ -3,26 +3,10 @@ import {useEffect, useState} from 'react';
 import {Container, Table} from 'react-bootstrap';
 import { NumericFormat } from 'react-number-format';
 import './NftData.css';
-import { BsArrowDownUp } from "react-icons/bs";
 
+ 
 function NftData() {
     const [nftData, setNftData] = useState([]);
-    const [order, setOrder] = useState(["ASC"]);
-    const sorting = (col) => {
-      if (order === "ASC") {
-        const sorted = [...nftData].sort((a, b) =>
-          a[col].toLowerCase() > b[col].toLowerCase() ? 1 : -1
-        );
-        setNftData(sorted);
-        setOrder("DSC");
-      } else {
-        const sorted = [...nftData].sort((a, b) =>
-          a[col].toLowerCase() < b[col].toLowerCase() ? 1 : -1
-        );
-        setNftData(sorted);
-        setOrder("ASC");
-      }
-    };
   
     useEffect(() => {
       fetch(
@@ -30,10 +14,14 @@ function NftData() {
       )
         .then((response) => response.json())
         .then((response) => {
-          console.log("24h data", response);
+
+          console.log("24h data", response.data);
           setNftData(response.data);
+          
         })
         .catch((err) => console.error("err", err));
+
+     
   
       const intervalId = setInterval(() => {
         fetch(
@@ -45,26 +33,25 @@ function NftData() {
             setNftData(response.data);
           })
           .catch((err) => console.error("err", err));
-      }, 1000);
+      }, 10000);
       return () => clearInterval(intervalId);
-    }, []);
+    },
+    []);
         
     
-      
-
   return (
     <div>
         <Container className="data">
         <div><h4 className="text-start" style={{marginTop:"4%"}}>Exchange Data</h4></div>
-        <div><h6 className="text-start">See what's going on in the crypto exchanges</h6></div>
+        <div><h6 className="text-start">See what's going on in the crypto exchanges.</h6></div>
             <Table>
                 <thead className="text-start">
                     <tr>
                     <th>Rank</th>
-                    <th onClick={() => sorting("name")}>Exchanges <BsArrowDownUp/></th>
-                    <th >24h Volume <BsArrowDownUp/></th>
-                    <th >7d Volume <BsArrowDownUp/></th>
-                    <th >30d Volume <BsArrowDownUp/></th>
+                    <th>Exchanges</th>
+                    <th>24h Volume</th>
+                    <th>7d Volume</th>
+                    <th>30d Volume</th>
                     </tr>
                 </thead>
                 <tbody className="text-start"> 
@@ -72,6 +59,7 @@ function NftData() {
                 <tr key={item.id}>
                   <th>{index + 1}</th>
                <th>{item.name}</th>
+          
                <th><NumericFormat value={item.values.USD.volume24h} displayType={'text'} thousandSeparator={true} prefix={'$'} /></th>
                <th><NumericFormat value={item.values.USD.volume7d} displayType={'text'} thousandSeparator={true} prefix={'$'} /></th>
                <th><NumericFormat value={item.values.USD.volume30d.toFixed(0)} displayType={'text'} thousandSeparator={true} prefix={'$'} /></th>

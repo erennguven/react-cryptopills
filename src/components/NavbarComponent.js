@@ -27,7 +27,6 @@ import { NumericFormat } from 'react-number-format';
        return () => clearInterval(intervalId);
  }, []);
 
- 
 
     return (
       <div>
@@ -35,8 +34,8 @@ import { NumericFormat } from 'react-number-format';
         <Container>
           <Navbar.Brand href="#home"><th>Cryptopills</th></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link><th>Crypto</th></Nav.Link>
             <Nav.Link><th>Exchanges</th></Nav.Link>
+            <Nav.Link><th>Crypto</th></Nav.Link>
             </Nav>
             <Nav className="me-auto"><Nav.Item><strong>All Cumulated & Ready For Use</strong></Nav.Item></Nav>
            
