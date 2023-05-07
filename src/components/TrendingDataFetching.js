@@ -109,19 +109,19 @@ function TrendingDataFetching() {
         <Row>
           <tr>
             <th>1</th>
-            <th><img style={{marginRight:"5px"}}  src={btcImage}></img></th>
+            <th><img style={{marginRight:"5px"}}  src={btcImage} alt=""></img></th>
             <th>Bitcoin</th>
             <th>{dominance?.bitcoin}</th>
           </tr>
           <tr>
             <th>2</th>
-            <th><img src={ethImage}></img></th>
+            <th><img src={ethImage} alt=""></img></th>
             <th>Ethereum</th>
             <th>{dominance?.ethereum}</th>
           </tr>
           <tr>
             <th>3</th>
-            <th><img   src={altImage}></img></th>
+            <th><img   src={altImage} alt=""></img></th>
             <th>Altcoin</th>
             <th>{(
           parseFloat(dominance?.ripple) + parseFloat(dominance?.litecoin) + 
@@ -130,7 +130,7 @@ function TrendingDataFetching() {
           </tr>
           <tr>
             <th>4</th>
-            <th><img   src={usdtImage}></img></th>
+            <th><img   src={usdtImage} alt=""></img></th>
             <th>USDT</th>
             <th>{dominance?.tether}</th>
           </tr>
@@ -144,7 +144,7 @@ function TrendingDataFetching() {
         {favourite.map((item, index) => (
             <tr  key={item.id}>
               <th>{index + 1 }</th>
-            <th><img  src={item.thumb}/></th>
+            <th><img  src={item.thumb} alt=""/></th>
             <th  >{item.name}</th>
             <th  >{item.symbol}</th>
             </tr>
@@ -157,25 +157,25 @@ function TrendingDataFetching() {
                 <Row>
                 <tr>
                   <th className="exchange-data">1</th>
-                  <th><img style={{width:"25px",height:"25px"}} src={binanceImage}/></th>
+                  <th><img style={{width:"25px",height:"25px"}} src={binanceImage} alt=""/></th>
                   <th>Binance</th>
                   <th>{binanceBtcVolume}฿</th>
                 </tr>
                 <tr>
                   <th>2</th>
-                  <th><img style={{width:"25px",height:"25px"}} src={coinbaseImage}/></th>
+                  <th><img style={{width:"25px",height:"25px"}} src={coinbaseImage} alt=""/></th>
                   <th>Coinbase</th>
                   <th>{coinbaseBtcVolume}฿</th>
                 </tr>
                 <tr>
                   <th>3</th>
-                  <th><img style={{width:"25px",height:"25px"}} src={okxImage}/></th>
+                  <th><img style={{width:"25px",height:"25px"}} src={okxImage} alt=""/></th>
                   <th>OKX</th>
                   <th>{okxBtcVolume}฿</th>
                 </tr>
                 <tr>
                   <th>4</th>
-                  <th><img style={{width:"25px",height:"25px"}} src={bybit?.image}/></th>
+                  <th><img style={{width:"25px",height:"25px"}} src={bybit?.image} alt=""/></th>
                   <th>Bybit</th>
                   <th>{bybit.trade_volume_24h_btc_normalized?.toLocaleString(undefined, {maximumFractionDigits:1})}฿</th>
                 </tr>

@@ -42,12 +42,12 @@ import { NumericFormat } from 'react-number-format';
               <Nav>
 
             <Nav.Item style={{margin: 10}}>
-            <strong><a style={{padding:8}} alt="Bitcoin's price">Bitcoin</a></strong>
+            <strong><text style={{padding:8}} alt="Bitcoin's price">Bitcoin</text></strong>
               <th><NumericFormat value={currentPrice.bitcoin} displayType={'text'} thousandSeparator={true} prefix={'$'} /></th>
 
               </Nav.Item>
             <Nav.Item style={{margin: 10}}>
-            <strong><a alt="Ethereum's price">Ethereum</a></strong>
+            <strong><text alt="Ethereum's price">Ethereum</text></strong>
             <th><NumericFormat value={currentPrice.ethereum} displayType={'text'} thousandSeparator={true} prefix={'$'} /></th>
               </Nav.Item>
               </Nav>
