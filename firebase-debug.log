@@ -1,0 +1,44 @@
+[debug] [2023-05-08T10:55:01.095Z] ----------------------------------------------------------------------
+[debug] [2023-05-08T10:55:01.099Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-08T10:55:01.100Z] CLI Version:   11.30.0
+[debug] [2023-05-08T10:55:01.100Z] Platform:      win32
+[debug] [2023-05-08T10:55:01.100Z] Node Version:  v18.12.1
+[debug] [2023-05-08T10:55:01.101Z] Time:          Mon May 08 2023 13:55:01 GMT+0300 (GMT+03:00)
+[debug] [2023-05-08T10:55:01.102Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-08T10:55:01.227Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-08T10:55:01.228Z] > authorizing via signed-in user (erennguven@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\pc\Desktop\React-Cryptopills\cryptopills
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-08T10:55:28.623Z] Using project from CLI flag: react-cryptopills
+[debug] [2023-05-08T10:55:28.628Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-cryptopills [none]
+[debug] [2023-05-08T10:55:29.121Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-cryptopills 200
+[debug] [2023-05-08T10:55:29.121Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-cryptopills {"projectId":"react-cryptopills","projectNumber":"128399128878","displayName":"react-cryptopills","name":"projects/react-cryptopills","resources":{"hostingSite":"react-cryptopills","realtimeDatabaseInstance":"react-cryptopills-default-rtdb"},"state":"ACTIVE","etag":"1_e81b93ea-ea4c-4945-8dfc-d47f788e303f"}
+[info] i  Using project react-cryptopills (react-cryptopills) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
