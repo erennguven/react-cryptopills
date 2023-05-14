@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "build",
+    "public": "build/cryptopills",
     "ignore": [
       "firebase.json",
       "**/.*",
