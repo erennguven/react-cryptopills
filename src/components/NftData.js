@@ -2,7 +2,6 @@ import React from 'react'
 import {useEffect, useState} from 'react';
 import {Container, Table} from 'react-bootstrap';
 import { NumericFormat } from 'react-number-format';
-import './NftData.css';
 
  
 function NftData() {
@@ -42,7 +41,7 @@ function NftData() {
   return (
     <div>
         <Container className="data">
-        <div><h4 className="text-start" style={{marginTop:"4%"}}>Exchange Data</h4></div>
+        <div><h4 className="text-start" id="exchange-data">Exchange Data</h4></div>
         <div><h6 className="text-start">See what's going on in the crypto exchanges.</h6></div>
             <Table>
                 <thead className="text-start">

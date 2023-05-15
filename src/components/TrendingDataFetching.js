@@ -7,7 +7,6 @@ import btcImage from '../assets/images/btc.png';
 import ethImage from '../assets/images/eth-diamond-black.png';
 import altImage from '../assets/images/alts.png';
 import usdtImage from '../assets/images/usdt.png';
-import './TrendingDataFetching.css';
 import { GoGraph } from "react-icons/go";
 import { FiTrendingUp } from "react-icons/fi";
 import { TfiCrown } from 'react-icons/tfi';
@@ -109,7 +108,7 @@ function TrendingDataFetching() {
         <Row>
           <tr>
             <th>1</th>
-            <th><img style={{marginRight:"5px"}}  src={btcImage} alt=""></img></th>
+            <th><img id="btc-img" src={btcImage} alt=""></img></th>
             <th>Bitcoin</th>
             <th>{dominance?.bitcoin}</th>
           </tr>
@@ -157,25 +156,25 @@ function TrendingDataFetching() {
                 <Row>
                 <tr>
                   <th className="exchange-data">1</th>
-                  <th><img style={{width:"25px",height:"25px"}} src={binanceImage} alt=""/></th>
+                  <th><img id="trending-img" src={binanceImage} alt=""/></th>
                   <th>Binance</th>
                   <th>{binanceBtcVolume}฿</th>
                 </tr>
                 <tr>
                   <th>2</th>
-                  <th><img style={{width:"25px",height:"25px"}} src={coinbaseImage} alt=""/></th>
+                  <th><img id="trending-img" src={coinbaseImage} alt=""/></th>
                   <th>Coinbase</th>
                   <th>{coinbaseBtcVolume}฿</th>
                 </tr>
                 <tr>
                   <th>3</th>
-                  <th><img style={{width:"25px",height:"25px"}} src={okxImage} alt=""/></th>
+                  <th><img id="trending-img" src={okxImage} alt=""/></th>
                   <th>OKX</th>
                   <th>{okxBtcVolume}฿</th>
                 </tr>
                 <tr>
                   <th>4</th>
-                  <th><img style={{width:"25px",height:"25px"}} src={bybit?.image} alt=""/></th>
+                  <th><img id="trending-img" src={bybit?.image} alt=""/></th>
                   <th>Bybit</th>
                   <th>{bybit.trade_volume_24h_btc_normalized?.toLocaleString(undefined, {maximumFractionDigits:1})}฿</th>
                 </tr>

@@ -1,13 +1,49 @@
 body {
   margin: 0;
-  font-family: -apple-system, Roboto, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: "Times New Roman",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, 'Roboto',
     monospace;
+}
+.generaldata {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.generaldata-items{
+  font-size:12px;
+  font-weight:bold;
+  color:black;
+}
+#crypto-data, #exchange-data{
+  margin-top: 4%;
+}
+.data {
+  font-size: 15px;
+  border: 0.1px solid;
+  border-radius: 10px;
+  margin-bottom:10px;
+  margin-top:15px;
+}
+.trending-dominance {
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom:10px;
+  margin-top:10px;
+  margin-right:-10px;
+  padding:5px;
+}
+th {
+  padding: 10px 6px;
+}
+#trending-img {
+  width:25px;
+  height:25px;
+}
+#btc-img {
+  margin-right:5px;
 }

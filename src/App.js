@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavbarComponent from './components/NavbarComponent';
 import GeneralDataFetching from './components/GeneralDataFetching';
@@ -17,9 +18,6 @@ function App() {
      <TrendingDataFetching/>
      <NftData/>
     <CryptoData/>
-    
-
-      
        </div>
   
 
