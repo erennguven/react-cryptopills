@@ -20,7 +20,6 @@ function App() {
     <CryptoData/>
        </div>
   
-
   );
 }
 export default App;

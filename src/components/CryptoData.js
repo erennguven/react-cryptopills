@@ -26,7 +26,7 @@ import React, {useEffect, useState} from 'react';
         <Container className="data">
         <div><h4 className="text-start" id="crypto-data">Crypto Data</h4></div>
         <div><h6 className="text-start">Get the fundamental knowledge of cryptos.</h6></div>
-        <Table style={{marginTop:"2%"}}>
+        <Table className='crypto-table'>
             <thead>
                 <tr>
                     <th className="text-start">#</th>

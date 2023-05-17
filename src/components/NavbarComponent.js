@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -41,12 +40,12 @@ import { NumericFormat } from 'react-number-format';
            
               <Nav>
 
-            <Nav.Item style={{margin: 10}}>
-            <strong><text style={{padding:8}} alt="Bitcoin's price">Bitcoin</text></strong>
+            <Nav.Item>
+            <strong><text className="btc" alt="Bitcoin's price">Bitcoin</text></strong>
               <th><NumericFormat value={currentPrice.bitcoin} displayType={'text'} thousandSeparator={true} prefix={'$'} /></th>
 
               </Nav.Item>
-            <Nav.Item style={{margin: 10}}>
+            <Nav.Item>
             <strong><text alt="Ethereum's price">Ethereum</text></strong>
             <th><NumericFormat value={currentPrice.ethereum} displayType={'text'} thousandSeparator={true} prefix={'$'} /></th>
               </Nav.Item>
