@@ -34,6 +34,7 @@ function NftData() {
           .catch((err) => console.error("err", err));
       }, 10000);
       return () => clearInterval(intervalId);
+      
     },
     []);
         
@@ -41,7 +42,7 @@ function NftData() {
   return (
     <div>
         <Container className="data">
-        <div><h4 className="text-start" id="exchange-data">Exchange Data</h4></div>
+        <div><h4 className="text-start" id="exchange-title">Exchange Data</h4></div>
         <div><h6 className="text-start">See what's going on in the crypto exchanges.</h6></div>
             <Table>
                 <thead className="text-start">
@@ -53,7 +54,7 @@ function NftData() {
                     <th>30d Volume</th>
                     </tr>
                 </thead>
-                <tbody className="text-start"> 
+                <tbody className="text-start" id="exchange-data"> 
                 {nftData.slice(0,20).map((item, index) => (
                 <tr key={item.id}>
                   <th>{index + 1}</th>
@@ -69,10 +70,10 @@ function NftData() {
             </Table>
         </Container>
 
-        
-
-       
+    
     </div>
+    
+    
   )
  };          
 export default NftData;

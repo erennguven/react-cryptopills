@@ -24,7 +24,7 @@ import React, {useEffect, useState} from 'react';
   return (
     <div>
         <Container className="data">
-        <div><h4 className="text-start" id="crypto-data">Crypto Data</h4></div>
+        <div><h4 className="text-start" id="crypto-title">Crypto Data</h4></div>
         <div><h6 className="text-start">Get the fundamental knowledge of cryptos.</h6></div>
         <Table className='crypto-table'>
             <thead>

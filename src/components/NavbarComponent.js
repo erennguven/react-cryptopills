@@ -9,7 +9,6 @@ import { NumericFormat } from 'react-number-format';
 
 
 
-  // her APInin data refresh süresi farklı olacağından dolayı apilere bakıp genel bir refresh süresi yazmak lazım.
   useEffect(() => {
     const fetchData = () => {
       fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cbitcoin&vs_currencies=usd')
@@ -28,7 +27,7 @@ import { NumericFormat } from 'react-number-format';
 
 
     return (
-      <div>
+      <div className="navbar-titles">
          <Navbar bg="light" variant="light">
         <Container>
           <Navbar.Brand href="#home"><th>Cryptopills</th></Navbar.Brand>
